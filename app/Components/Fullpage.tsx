@@ -34,7 +34,7 @@ function Fullpage() {
       >
         <Image
           src="/images/rover.jpg"
-          alt="monkey"
+          alt="rover"
           fill={true}
           style={{
             objectFit: "cover",

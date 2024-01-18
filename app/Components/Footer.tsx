@@ -29,7 +29,7 @@ function Footer() {
           </div>
           <p>
             Create, Sell And Collect Truly Rare Digital Artworks. Powered By
-            Blockchain Technology.
+            Abigb.
           </p>
           <div className="socials">
             <AiFillGithub />
@@ -59,7 +59,7 @@ function Footer() {
         </div>
       </nav>
       <p className="rights">
-        <a href="">©2023 The Code Dealer. All rights reserved.</a>
+        <a href="">©2024 MaddyFX. All rights reserved.</a>
         <a href="">Privacy policy | Terms of service</a>
       </p>
     </FooterStyled>
