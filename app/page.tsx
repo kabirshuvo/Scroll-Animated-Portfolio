@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 import ZoomSection from "./Components/ZoomSection";
 import HorizontalWrapper from "./Components/HorizontalWrapper";
 import { motion, useScroll, useTransform } from "framer-motion";
-import vdo from "../public/videos/DigitalAnimation.mp4";
+// import vdo from "../public/videos/DigitalAnimation.mp4";
 
 export default function Home() {
   const video = React.useRef<HTMLDivElement>(null);
@@ -82,11 +82,12 @@ export default function Home() {
             }}
           >
             <iframe
-              src={vdo}
+               src="https://www.youtube.com/embed/ACaX2X_ZHbM"
               title="MaddyFX Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+           
           </motion.div>
         </SectionLayout>
 
