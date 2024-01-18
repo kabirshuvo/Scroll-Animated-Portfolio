@@ -2,7 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
-import logo from "/public/logo.png";
+import logo from "/public/images/pen-logo.png";
 import footer from "../utils/footer";
 import Image from "next/image";
 
@@ -21,7 +21,7 @@ function Footer() {
         <div className="logo-con">
           <div className="logo">
             <Image src={logo} width={36} alt="logo" />
-            <h2>Logo</h2>
+            <h2>MaddyFX</h2>
           </div>
           <div className="input">
             <input type="text" placeholder="Subscribe here..." />

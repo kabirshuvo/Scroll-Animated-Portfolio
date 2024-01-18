@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/images/pen-logo.png";
 import Button from "../Button/Button";
 import styled from "styled-components";
 import { FaRocket, FaWallet } from "react-icons/fa";
@@ -34,7 +34,7 @@ function Header() {
       <nav>
         <div className="logo">
           <Image src={logo} alt="logo" width={36} />
-          <h2>Logo</h2>
+          <h2>MaddyFX</h2>
         </div>
         <div className="input">
           <input type="text" placeholder="Search" />
