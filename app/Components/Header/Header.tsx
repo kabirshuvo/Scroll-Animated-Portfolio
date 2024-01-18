@@ -44,13 +44,16 @@ function Header() {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Auctions</a>
+            <a href="#">About Me</a>
           </li>
           <li>
-            <a href="#">Marketplace</a>
+            <a href="#">Designes</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#">Services</a> 
+          </li>
+          <li>
+            <a href="#">Offers</a>
           </li>
           <Button name="Connect Wallet" icon={<FaWallet />} />
         </ul>
@@ -58,23 +61,20 @@ function Header() {
       <div className="header-content">
         <div className="text-content">
           <h1 className={abril.className}>
-            Buy, collect, and sell extraordinary NFTs
+          I came, I saw, I won
           </h1>
           <p>
-            Acquire expertise in navigating the rapidly evolving and
-            exhilarating NFT landscape, unveil the highly sought-after NFTs, and
-            comprehend the possible advantages and disadvantages of acquiring,
-            amassing, and vending these exceptional digital assets.
+            Hi, I'm Kamrul Hasan. Formaly known as MaddyFx. With my 11 years of <span>A</span>dobe <span>I</span>llustrator experience I'm Welcoming you to my portfolio. Here I Showcase My Best Designes, Most Experiences and My Dreams. Thnak you So much for your valuable time. Wish we would talk about my services or your problems. I have experience and soutions.
           </p>
           <div className="buttons">
             <Button
-              name="Get Started"
+              name="View Designs"
               background="#f2994a"
               color="#fff"
               border="1px solid #f2994a"
               icon={<FaRocket />}
             />
-            <Button name="Learn More" />
+            <Button name="Only Proud Experiences" />
           </div>
         </div>
         <div className="image-content">
@@ -85,7 +85,7 @@ function Header() {
             }}
           >
             <Image
-              src="/images/monkey.png"
+              src="/images/bulb_tree.png"
               width={600}
               height={600}
               alt="hero"
