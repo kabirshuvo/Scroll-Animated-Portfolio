@@ -1,3 +1,5 @@
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Header/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -42,7 +44,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    
       <body className={inter.className}>
+   
         <div className="lines">
           <div className="line-1">
             <div className="shapes">
@@ -73,7 +77,9 @@ export default function RootLayout({
             </div>
           </div>
         </div>
+        
         {children}
+      
       </body>
     </html>
   );

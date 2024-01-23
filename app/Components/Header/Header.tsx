@@ -8,6 +8,8 @@ import styled from "styled-components";
 import { FaRocket, FaWallet } from "react-icons/fa";
 import { Abril_Fatface } from "next/font/google";
 import hover3d from "../../utils/hover";
+import Link from "next/link";
+import Navbar from "./NavBar";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -31,33 +33,8 @@ function Header() {
 
   return (
     <HeaderStyled ref={hero}>
-      <nav>
-        <div className="logo">
-          <Image src={logo} alt="logo" width={36} />
-          <h2>MaddyFX</h2>
-        </div>
-        <div className="input">
-          <input type="text" placeholder="Search" />
-        </div>
-        <ul className="nav-items">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About Me</a>
-          </li>
-          <li>
-            <a href="#">Designs</a>
-          </li>
-          <li>
-            <a href="#">Services</a> 
-          </li>
-          <li>
-            <a href="#">Offers</a>
-          </li>
-          <Button name="Connect Wallet" icon={<FaWallet />} />
-        </ul>
-      </nav>
+   <Navbar />
+
       <div className="header-content">
         <div className="text-content">
           <h1 className={abril.className}>
