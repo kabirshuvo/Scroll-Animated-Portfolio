@@ -1,15 +1,21 @@
-import React from 'react'
-import Navbar from '../Components/Header/NavBar'
-import Footer from '../Components/Footer'
+import React from "react";
+import Navbar from "../Components/Header/NavBar";
+import Footer from "../Components/Footer";
+import SectionLayout from "../Components/SectionLayout";
+import HorizontalWrapper from "../Components/HorizontalWrapper";
 
 const AboutPage = () => {
   return (
-    <div>
-        <Navbar />
-      <h3>About Page</h3>
+    <>
+      <Navbar />
+      <SectionLayout>
+       <div>
+        <h3>About Page</h3>
+       </div>
+      </SectionLayout>
       <Footer />
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

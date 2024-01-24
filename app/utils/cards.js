@@ -10,7 +10,7 @@ export const cards = [
     id: 1,
     title: "Monkey King",
     description: "A monkey king who is a disciple of Buddha.",
-    image: bitcoin,
+    image: monkey,
     link: "/monkey-king",
   },
   {
@@ -36,9 +36,10 @@ export const cards = [
   },
   {
     id: 5,
-    title: "Smoke 2",
-    description: "A smoke that is a byproduct of fire.",
-    image: smoke_2,
+    title: "Bitcoin",
+    description: "Bitcoin is the ultimate solution of needs.",
+    image: bitcoin,
     link: "/smoke-2",
   },
+
 ];
