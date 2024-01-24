@@ -13,6 +13,7 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import { BsDiscord } from "react-icons/bs";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -48,7 +49,7 @@ function Footer() {
                   {item.links.map((text: any, index: number) => {
                     return (
                       <li key={index}>
-                        <a href="">{text.name}</a>
+                        <Link href=''>{text.name}</Link>
                       </li>
                     );
                   })}

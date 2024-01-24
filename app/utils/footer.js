@@ -3,8 +3,8 @@ const footer = [
     title: "My Account",
     links: [
       {
-        name: "Profile",
-        link: "/profile",
+        name: "About",
+        link: "/about",
       },
       {
         name: "Settings",
