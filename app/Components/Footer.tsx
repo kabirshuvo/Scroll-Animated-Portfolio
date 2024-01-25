@@ -13,6 +13,7 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import { BsDiscord } from "react-icons/bs";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -29,7 +30,7 @@ function Footer() {
           </div>
           <p>
             Create, Sell And Collect Truly Rare Digital Artworks. Powered By
-            Blockchain Technology.
+            Abigb.
           </p>
           <div className="socials">
             <AiFillGithub />
@@ -48,7 +49,7 @@ function Footer() {
                   {item.links.map((text: any, index: number) => {
                     return (
                       <li key={index}>
-                        <a href="">{text.name}</a>
+                        <Link href=''>{text.name}</Link>
                       </li>
                     );
                   })}
@@ -59,7 +60,7 @@ function Footer() {
         </div>
       </nav>
       <p className="rights">
-        <a href="">©2023 The Code Dealer. All rights reserved.</a>
+        <a href="">©2024 MaddyFX. All rights reserved.</a>
         <a href="">Privacy policy | Terms of service</a>
       </p>
     </FooterStyled>
