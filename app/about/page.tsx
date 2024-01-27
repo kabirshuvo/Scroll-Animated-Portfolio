@@ -5,6 +5,14 @@ import Footer from "../Components/Footer";
 import SectionLayout from "../Components/SectionLayout";
 import {CenteredText, FlexContainer, LeftDiv, ImageDiv, RightDiv, ScrollingImages} from "../Components/styles/about.styled"
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Abril_Fatface } from "next/font/google";
+import Button from "../Components/Button/Button";
+import Testimonials from "../Components/Testimonials";
+
+const abril = Abril_Fatface({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const AboutPage = () => {
   return (
@@ -19,14 +27,23 @@ const AboutPage = () => {
       </SectionLayout>
       <SectionLayout>
         <FlexContainer>
-          <LeftDiv>left div</LeftDiv>
+          <LeftDiv>
+            <div>
+            <Button name="Dreams to design"></Button>
+            </div>
+          </LeftDiv>
           <ImageDiv>
             <div>
               <img src="https://plus.unsplash.com/premium_photo-1688891564708-9b2247085923?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile pic of Kamrul Hasan" />
             </div>
           </ImageDiv>
-          <RightDiv>Rirgt div</RightDiv>
+          <RightDiv><div>
+            <Button name="Design to reality"></Button>
+            </div></RightDiv>
         </FlexContainer>
+      </SectionLayout>
+      <SectionLayout>
+        <Testimonials></Testimonials>
       </SectionLayout>
       <SectionLayout>
         <ScrollingImages>

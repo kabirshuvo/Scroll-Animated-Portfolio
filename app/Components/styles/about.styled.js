@@ -7,10 +7,17 @@ import { motion, useScroll, useTransform } from "framer-motion";
 export const CenteredText = styled.h3`
   text-align: center;
   font-size: 80px;
-  background: linear-gradient(45deg, #ff8a00, #e52e71, #3498db);
+  /* background: linear-gradient(45deg, #ff8a00, #e52e71, #3498db); */
+  background: linear-gradient(45deg, #ff8a00, #f2994a, #3498db);
+  
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  &:hover {
+    background: linear-gradient(45deg,   #3498db, #ff8a00, #f2994a);
+
+  }
 `;
 
 export const FlexContainer = styled.div`
