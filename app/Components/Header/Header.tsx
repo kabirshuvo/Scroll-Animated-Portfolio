@@ -33,15 +33,18 @@ function Header() {
 
   return (
     <HeaderStyled ref={hero}>
-   <Navbar />
+      <Navbar />
 
       <div className="header-content">
         <div className="text-content">
-          <h1 className={abril.className}>
-          I came, I saw, I won
-          </h1>
+          <h1 className={abril.className}>I came, I saw, I won</h1>
           <p>
-            Hi, I'm Kamrul Hasan. Formaly known as MaddyFx. With my 11 years of <span>A</span>dobe <span>I</span>llustrator experience I'm Welcoming you to my portfolio. Here I Showcase My Best Designes, Most Experiences and My Dreams. Thnak you So much for your valuable time. Wish we would talk about my services or your problems. I have experience and soutions.
+            Hi, I'm Kamrul Hasan, formally known as MaddyFx. With my 11 years of{" "}
+            <span>A</span>dobe <span>I</span>llustrator experience I'm Welcoming
+            you to my portfolio. Here I Showcase My Best Designs, Most
+            Experiences, and My Dreams. Thank you So much for your valuable
+            time. I wish we could talk about my services or your problems. I
+            have experience and solutions.
           </p>
           <div className="buttons">
             <Button
@@ -100,7 +103,7 @@ const HeaderStyled = styled.header`
         width: 55%;
         padding: 0.6rem 0.8rem;
         border-radius: 8px;
-        background-color: #161616;
+        background-color: #191919;
         border: 1px solid var(--color-border);
         &::placeholder {
           color: var(--color-border);

@@ -1,22 +1,23 @@
-"use client"
+"use client";
 
-import styled from "styled-components"
+import styled from "styled-components";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-
-export const CenteredText = styled.h3`
+export const CenteredText = styled.h1`
   text-align: center;
-  font-size: 80px;
-  /* background: linear-gradient(45deg, #ff8a00, #e52e71, #3498db); */
-  background: linear-gradient(45deg, #ff8a00, #f2994a, #3498db);
-  
+  font-size: 70px;
+  background: linear-gradient(45deg, #f2994a, #3498db, #ff8a00);
+
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
   &:hover {
-    background: linear-gradient(45deg,   #3498db, #ff8a00, #f2994a);
-
+  background: linear-gradient(45deg, #ff8a00, #f2994a, #3498db);
+  transition: background 0.9s ease;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `;
 
@@ -54,8 +55,6 @@ export const RightDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-
 `;
 
 export const ScrollingImages = styled(motion.div)`
@@ -64,5 +63,4 @@ export const ScrollingImages = styled(motion.div)`
   align-items: center;
   gap: 1rem;
   overflow-x: auto;
-  
 `;

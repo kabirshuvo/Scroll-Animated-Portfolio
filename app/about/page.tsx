@@ -3,15 +3,22 @@ import React from "react";
 import Navbar from "../Components/Header/NavBar";
 import Footer from "../Components/Footer";
 import SectionLayout from "../Components/SectionLayout";
-import {CenteredText, FlexContainer, LeftDiv, ImageDiv, RightDiv, ScrollingImages} from "../Components/styles/about.styled"
+import {
+  CenteredText,
+  FlexContainer,
+  LeftDiv,
+  ImageDiv,
+  RightDiv,
+  ScrollingImages,
+} from "../Components/styles/about.styled";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Abril_Fatface } from "next/font/google";
+import { Advent_Pro } from "next/font/google";
 import Button from "../Components/Button/Button";
 import Testimonials from "../Components/Testimonials";
 
-const abril = Abril_Fatface({
+const abril = Advent_Pro({
   subsets: ["latin"],
-  weight: "400",
+  weight: "900",
 });
 
 const AboutPage = () => {
@@ -20,26 +27,35 @@ const AboutPage = () => {
       <Navbar />
       <SectionLayout>
         <CenteredText>
+        
           Kamrul Hasan <br />
-          Print on demand Specialist & <br /> Graphic Designer. <br />
-          Based on Bangladesh
+            Print on demand Specialist & <br /> Graphic Designer. <br />
+            Based on Bangladesh
+          
+            
+       
         </CenteredText>
       </SectionLayout>
       <SectionLayout>
         <FlexContainer>
           <LeftDiv>
             <div>
-            <Button name="Dreams to design"></Button>
+              <Button name="Dreams to design"></Button>
             </div>
           </LeftDiv>
           <ImageDiv>
             <div>
-              <img src="https://plus.unsplash.com/premium_photo-1688891564708-9b2247085923?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile pic of Kamrul Hasan" />
+              <img
+                src="https://plus.unsplash.com/premium_photo-1688891564708-9b2247085923?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Profile pic of Kamrul Hasan"
+              />
             </div>
           </ImageDiv>
-          <RightDiv><div>
-            <Button name="Design to reality"></Button>
-            </div></RightDiv>
+          <RightDiv>
+            <div>
+              <Button name="Design to reality"></Button>
+            </div>
+          </RightDiv>
         </FlexContainer>
       </SectionLayout>
       <SectionLayout>
@@ -62,5 +78,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
-
