@@ -1,26 +1,15 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
+import design, { DesignItem } from "../../utils/design";
 
-const RotatedText = styled.span`
-  color: #2da4ec;
-  font-size: 3rem;
-`;
-
-const NonRotatedText = styled.h4`
-  color: #2da4ec;
-  padding-bottom: 4rem;
-`;
-
-const RotatedDiv = styled.div`
-  transform: rotate(-90deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-`;
-
-const Designs = () => {
+const DesignItemComponent: React.FC<DesignItem> = ({ title, description }) => (
+  <>
+    <h1 style={{ color: "#de37cb" }}>{title}</h1>
+    <TextParagraph>{description}</TextParagraph>
+  </>
+);
+const DesignLayout = () => {
   return (
     <>
       <StyledDiv>
@@ -33,13 +22,11 @@ const Designs = () => {
           </LeftDiv>
           <RightDiv>
             <BackgroundImage />
+
             <TextContent>
-              <h1 style={{ color: "#de37cb" }}>Design 1</h1>
-              <TextParagraph>Lorem Lorem Lorem.</TextParagraph>
-              <h1 style={{ color: "#de37cb" }}>Design 2</h1>
-              <TextParagraph>Lorem Lorem Lorem.</TextParagraph>
-              <h1 style={{ color: "#de37cb" }}>Design 3</h1>
-              <TextParagraph>Lorem Lorem Lorem.</TextParagraph>
+              {design.map((item) => (
+                <DesignItemComponent key={item.id} {...item} />
+              ))}
             </TextContent>
           </RightDiv>
         </div>
@@ -47,6 +34,7 @@ const Designs = () => {
     </>
   );
 };
+
 const StyledDiv = styled.div`
   .ParentDiv {
     display: flex;
@@ -89,9 +77,27 @@ const TextContent = styled.div`
   padding: 2rem;
 
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 30%;
   transform: translate(-50%, -50%);
+`;
+
+const RotatedText = styled.span`
+  color: #2da4ec;
+  font-size: 3rem;
+`;
+
+const NonRotatedText = styled.h4`
+  color: #2da4ec;
+  padding-bottom: 4rem;
+`;
+
+const RotatedDiv = styled.div`
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 `;
 
 const TextParagraph = styled.p`
@@ -99,4 +105,4 @@ const TextParagraph = styled.p`
   color: #ffeb3b;
 `;
 
-export default Designs;
+export default DesignLayout;
