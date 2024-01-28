@@ -10,6 +10,7 @@ import {
   ImageDiv,
   RightDiv,
   ScrollingImages,
+  AboutText
 } from "../Components/styles/about.styled";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Advent_Pro } from "next/font/google";
@@ -25,16 +26,12 @@ const abril = Advent_Pro({
 const AboutPage = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <SectionLayout>
         <CenteredText>
-        
           Kamrul Hasan <br />
-            Print on demand Specialist & <br /> Graphic Designer. <br />
-            Based on Bangladesh
-          
-            
-       
+          Print on demand Specialist & <br /> Graphic Designer. <br />
+          Based on Bangladesh
         </CenteredText>
       </SectionLayout>
       <SectionLayout>
@@ -60,6 +57,19 @@ const AboutPage = () => {
         </FlexContainer>
       </SectionLayout>
       <SectionLayout>
+        <AboutText>
+          Hi, I'm MaddyFX. I am a Graphics Designer and Print On Demand Expert.
+          Have excellent skills in Amazon Services, Socks Design, Cap or Hat
+          Design, T-shirt Design, Vector Illustration, Photo Editing, Logo
+          Design, Line Art, Banner Design, Package Design etc. I am also
+          experienced in Amazon Storefront Design, EBC Page Creation and
+          Customization. I'm working with several Amazon Brands and Individual
+          Buyers as there complete Graphic and Amazon Solution. My aim is to
+          provide top quality Service on time and in budget with Satisfaction.
+          Please contact me to discuss More. Thanks, MaddyFX.
+        </AboutText>
+      </SectionLayout>
+      <SectionLayout>
         <Testimonials></Testimonials>
       </SectionLayout>
       <SectionLayout>
@@ -74,7 +84,7 @@ const AboutPage = () => {
           <Slider />
         </ScrollingImages>
       </SectionLayout>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

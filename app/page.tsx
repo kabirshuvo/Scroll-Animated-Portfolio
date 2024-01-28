@@ -99,7 +99,7 @@ export default function Home() {
           <TextSection />
         </SectionLayout>
 
-        <Footer />
+       {/* <Footer /> */}
       </MainStyled>
     </>
   );

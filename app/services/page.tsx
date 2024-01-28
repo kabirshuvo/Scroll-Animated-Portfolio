@@ -8,13 +8,13 @@ import {Container} from "../Components/styles/Container.styled"
 const ServicesPage = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Container>
         <div>
           <h3>Services Page</h3>
         </div>
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

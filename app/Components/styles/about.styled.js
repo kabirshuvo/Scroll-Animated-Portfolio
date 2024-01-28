@@ -2,6 +2,12 @@
 
 import styled from "styled-components";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Advent_Pro } from "next/font/google";
+
+const abril = Advent_Pro({
+  subsets: ["latin"],
+  weight: "900",
+});
 
 export const CenteredText = styled.h1`
   text-align: center;
@@ -13,8 +19,8 @@ export const CenteredText = styled.h1`
   -webkit-text-fill-color: transparent;
 
   &:hover {
-  background: linear-gradient(45deg, #ff8a00, #f2994a, #3498db);
-  transition: background 0.9s ease;
+    background: linear-gradient(45deg, #ff8a00, #f2994a, #3498db);
+    transition: background 0.9s ease;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,3 +70,25 @@ export const ScrollingImages = styled(motion.div)`
   gap: 1rem;
   overflow-x: auto;
 `;
+
+export const AboutText = styled.div`
+  text-align: center;
+  font-family: 'Advent Pro', sans-serif;
+  /* I want use this font for only this div */
+  font-size: 2rem;
+  background: linear-gradient(45deg, #f2994a, #3498db, #ff8a00);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &:hover {
+    background: linear-gradient(45deg, #ff8a00, #f2994a, #3498db);
+    transition: background 0.9s ease;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`;
+
+

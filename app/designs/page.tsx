@@ -6,7 +6,7 @@ import SectionLayout from '../Components/SectionLayout'
 const DesignsPage = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <SectionLayout>
         <div>
         <h3>Design Page</h3>

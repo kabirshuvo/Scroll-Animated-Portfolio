@@ -33,7 +33,6 @@ function Header() {
 
   return (
     <HeaderStyled ref={hero}>
-      <Navbar />
 
       <div className="header-content">
         <div className="text-content">
