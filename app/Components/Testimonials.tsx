@@ -73,7 +73,6 @@ const StyledSection = styled.section`
   margin-left: auto;
   margin-right: auto;
   backdrop-filter: blur(10px);
-  backdrop-opacity: 0.8;
   border-bottom: 2px solid #c62828;
   padding-top: 20px;
   text-align: center;
@@ -110,15 +109,16 @@ const StyledSpan = styled.span`
 
 const SliderContainer = styled.div`
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
 `;
 
-const TestimonialCard = styled.div`
+const TestimonialCard = styled.div<{ active: boolean }>`
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
   margin: 16px;
-  width: 300px;
+  width: 700px;
   background-color: ${(props) => (props.active ? "#191919" : "#111111")};
   transition: background-color 0.3s ease;
 
