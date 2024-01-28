@@ -32,8 +32,9 @@ const NavbarStyled = styled.nav`
       width: 55%;
       padding: 0.6rem 0.8rem;
       border-radius: 8px;
-      background-color: #161616;
+      background-color: #191919;
       border: 1px solid var(--color-border);
+
       &::placeholder {
         color: var(--color-border);
         font-weight: 500;
@@ -45,7 +46,6 @@ const NavbarStyled = styled.nav`
     display: flex;
     align-items: center;
     gap: 2rem;
-    list-style: none;
 
     li {
       transition: all 0.2s ease-in-out;
@@ -55,16 +55,8 @@ const NavbarStyled = styled.nav`
         transform: scale(1.1);
       }
     }
-
-    a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 1rem;
-    }
   }
 `;
-
 const Navbar = () => {
   return (
     <NavbarStyled>

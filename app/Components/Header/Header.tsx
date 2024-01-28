@@ -33,15 +33,18 @@ function Header() {
 
   return (
     <HeaderStyled ref={hero}>
-   <Navbar />
+      <Navbar />
 
       <div className="header-content">
         <div className="text-content">
-          <h1 className={abril.className}>
-          I came, I saw, I won
-          </h1>
+          <h1 className={abril.className}>I came, I saw, I won</h1>
           <p>
-            Hi, I'm Kamrul Hasan. Formaly known as MaddyFx. With my 11 years of <span>A</span>dobe <span>I</span>llustrator experience I'm Welcoming you to my portfolio. Here I Showcase My Best Designes, Most Experiences and My Dreams. Thnak you So much for your valuable time. Wish we would talk about my services or your problems. I have experience and soutions.
+            Hi, I'm Kamrul Hasan, formally known as MaddyFx. With my 11 years of{" "}
+            <span>A</span>dobe <span>I</span>llustrator experience I'm Welcoming
+            you to my portfolio. Here I Showcase My Best Designs, Most
+            Experiences, and My Dreams. Thank you So much for your valuable
+            time. I wish we could talk about my services or your problems. I
+            have experience and solutions.
           </p>
           <div className="buttons">
             <Button
@@ -78,51 +81,7 @@ function Header() {
 }
 
 const HeaderStyled = styled.header`
-  nav {
-    padding: 0 4rem;
-    min-height: 10vh;
-    border-bottom: 1px solid var(--color-border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      cursor: pointer;
-    }
-
-    .input {
-      flex: 2;
-      display: flex;
-      justify-content: center;
-      input {
-        width: 55%;
-        padding: 0.6rem 0.8rem;
-        border-radius: 8px;
-        background-color: #161616;
-        border: 1px solid var(--color-border);
-        &::placeholder {
-          color: var(--color-border);
-          font-weight: 500;
-        }
-      }
-    }
-
-    .nav-items {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      li {
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-          color: white;
-          transform: scale(1.1);
-        }
-      }
-    }
-  }
+ 
 
   .header-content {
     padding: 0 10rem 5rem 10rem;
