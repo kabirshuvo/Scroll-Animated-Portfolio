@@ -15,6 +15,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Advent_Pro } from "next/font/google";
 import Button from "../Components/Button/Button";
 import Testimonials from "../Components/Testimonials";
+import Slider from "../Components/swiperComponents/Slider";
 
 const abril = Advent_Pro({
   subsets: ["latin"],
@@ -63,13 +64,14 @@ const AboutPage = () => {
       </SectionLayout>
       <SectionLayout>
         <ScrollingImages>
-          <motion.div>image 1</motion.div>
+          {/* <motion.div>image 1</motion.div>
           <motion.div>image 2</motion.div>
           <motion.div>image 3</motion.div>
           <motion.div>image 4</motion.div>
           <motion.div>image 5</motion.div>
           <motion.div>image 6</motion.div>
-          <motion.div>image 7</motion.div>
+          <motion.div>image 7</motion.div> */}
+          <Slider />
         </ScrollingImages>
       </SectionLayout>
       <Footer />

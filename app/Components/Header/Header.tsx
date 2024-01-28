@@ -81,51 +81,7 @@ function Header() {
 }
 
 const HeaderStyled = styled.header`
-  nav {
-    padding: 0 4rem;
-    min-height: 10vh;
-    border-bottom: 1px solid var(--color-border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      cursor: pointer;
-    }
-
-    .input {
-      flex: 2;
-      display: flex;
-      justify-content: center;
-      input {
-        width: 55%;
-        padding: 0.6rem 0.8rem;
-        border-radius: 8px;
-        background-color: #191919;
-        border: 1px solid var(--color-border);
-        &::placeholder {
-          color: var(--color-border);
-          font-weight: 500;
-        }
-      }
-    }
-
-    .nav-items {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      li {
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-          color: white;
-          transform: scale(1.1);
-        }
-      }
-    }
-  }
+ 
 
   .header-content {
     padding: 0 10rem 5rem 10rem;
