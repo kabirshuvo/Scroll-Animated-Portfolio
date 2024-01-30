@@ -82,12 +82,11 @@ export default function Home() {
             }}
           >
             <iframe
-               src="https://www.youtube.com/embed/ACaX2X_ZHbM"
+              src="https://www.youtube.com/embed/ACaX2X_ZHbM"
               title="MaddyFX Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
-           
           </motion.div>
         </SectionLayout>
 
