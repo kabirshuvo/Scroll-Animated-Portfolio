@@ -7,13 +7,13 @@ import SectionLayout from "../Components/SectionLayout";
 const Experiences = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <SectionLayout>
         <div>
           <h3>Experiences </h3>
         </div>{" "}
       </SectionLayout>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

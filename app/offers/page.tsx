@@ -6,13 +6,13 @@ import SectionLayout from "../Components/SectionLayout";
 const OffersPage = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <SectionLayout>
         <div>
           <h3>My Offers</h3>
         </div>
       </SectionLayout>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -7,6 +7,8 @@ import logo from '../../../public/images/pen-logo.png';
 import Link from 'next/link';
 import Button from '../Button/Button';
 import { FaWallet } from 'react-icons/fa';
+import { motion, useScroll, useTransform } from "framer-motion";
+
 
 const NavbarStyled = styled.nav`
   padding: 0 4rem;
@@ -57,7 +59,26 @@ const NavbarStyled = styled.nav`
     }
   }
 `;
+
 const Navbar = () => {
+
+
+
+  const { scrollYProgress } = useScroll({
+    // target: video,
+    offset: ["start end", "end start"],
+  });
+  
+  const opacity = useTransform(scrollYProgress, [0, 0.65, 1], [1, 1, 0]);
+  const scale = useTransform(
+    scrollYProgress,
+    [0, 0.6, 0.8, 0.9],
+    [1, 0.8, 0.8, 0]
+  );
+
+
+
+
   return (
     <NavbarStyled>
       <div className="logo">

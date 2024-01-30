@@ -14,9 +14,12 @@ import {
 } from "react-icons/ai";
 import { BsDiscord } from "react-icons/bs";
 import Link from "next/link";
+import SectionLayout from "./SectionLayout";
+import NavAndFooter from "./NavAndFooter";
 
 function Footer() {
   return (
+    <NavAndFooter>
     <FooterStyled>
       <nav>
         <div className="logo-con">
@@ -64,6 +67,7 @@ function Footer() {
         <a href="">Privacy policy | Terms of service</a>
       </p>
     </FooterStyled>
+    </NavAndFooter>
   );
 }
 
@@ -167,5 +171,9 @@ const FooterStyled = styled.footer`
     border-top: 1px solid var(--color-border);
   }
 `;
+const MainStyled = styled.main`
+  min-height: 100vh;
+  position: absolute;
+  width: 100%;`
 
 export default Footer;
